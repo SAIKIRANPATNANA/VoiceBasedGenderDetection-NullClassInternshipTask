@@ -1,0 +1,8 @@
+pydub
+librosa
+tensorflow
+sklearn
+pandas 
+numpy 
+streamlit-audiorec
+
