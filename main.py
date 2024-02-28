@@ -34,10 +34,10 @@ if st.toggle('Upload Audio'):
 elif st.toggle('Record Audio'):
     recorded_file = st_audiorec()
     if st.button('Predict Gender') and recorded_file is not None:
-        with open("test_audios/recorded_audio.wav", "wb") as f:
+        with open("tested_recordings/recorded_audio.wav", "wb") as f:
             f.write(recorded_file)
         st.success("Audio recorded successfully!")
-        recorded_file = 'test_audios/recorded_audio.wav'
+        recorded_file = 'tested_recordings/recorded_audio.wav'
         if predict(recorded_file)==1:
             st.success("Your recorded audio is of a Male.")
         else:
