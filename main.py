@@ -40,7 +40,9 @@ elif st.toggle('Record Audio'):
         recorded_file = 'tested_recordings/recorded_audio.wav'
         if predict(recorded_file)==1:
             st.success("Your recorded audio is of a Male.")
+            exit()
         else:
             st.success("Your recorded audio is of a Female.")
+            exit()
 
 # model size: 0.5 mb
