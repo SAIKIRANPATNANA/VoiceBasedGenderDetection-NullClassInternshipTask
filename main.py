@@ -14,6 +14,9 @@ def predict(audio_file):
     features = np.expand_dims(features, axis=0)
     return int(np.round(model.predict(features)))
 
+st.set_page_config(page_title='Voice Based Gender Detection Project', layout='centered')
+
+st.title('Null Class Intership Project')
 st.title("VOICE BASED GENDER PREDICTION")
 st.header('Trained & Developed by Sai Kiran Patnana')
 
