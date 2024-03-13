@@ -3,6 +3,6 @@ librosa
 tensorflow
 scikit-learn
 pandas 
-numpy 
+numpy==1.24
 streamlit-audiorec
 
